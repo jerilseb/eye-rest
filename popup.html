@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Roboto:400,600" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+      body {
+        width: 290px;
+        margin: 0;
+        background-color: mediumspringgreen;
+        border: #C8D2FC solid 8px;
+      }
+      #counter {
+        margin: 0 0 0.5em;
+        font-size: 2.5em;
+        text-align: center;
+      }
+      #switch {
+        min-width: 90px;
+        padding: 0.5em 0.75em;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px #333;
+        background-color: coral;
+        font-size: 1.4em;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      #switch.is-not-paused {
+        color: bisque;
+      }
+      #switch.is-paused {
+        color: coral;
+        background-color: bisque;
+      }
+      .title-box {
+        text-align: right;
+        border-right: 1px solid #333;
+      }
+    </style>
+  </head>
+  <body class="p1">
+    <div class="flex flex--center">
+      <div class="pv1ph2 title-box">
+        <h1>Eye Rest</h1>
+      </div>
+      <div class="ph2 button-box">
+        <p id="counter">&nbsp;</p>
+        <button id="switch" class="is-not-paused">Pause</button>
+      </div>
+    </div>
+    <script src="helpers.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

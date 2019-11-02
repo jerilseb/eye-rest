@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Roboto:400,500" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-size: 1em;
+        background-color: aquamarine;
+        border: palegreen solid 15px;
+        /* bisque darkturquoise coral mediumspringgreen palegreen turquoise */
+      }
+      #timer {
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+      .flex--row-reverse {
+        flex-direction: row-reverse;
+        justify-content: center;
+      }
+      .flex--column {
+        flex-direction: column;
+      }
+      .attribution {
+        font-size: 0.5em;
+        text-align: right;
+      }
+      .lookaway {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+      }
+      .title-box {
+        align-items: flex-start;
+      }
+      .content-box {
+        border-right: 1px solid #333;
+      }
+    </style>
+  </head>
+  <body class="pv1">
+    <div class="flex flex--row-reverse p1">
+      <div class="flex flex--column pv1 pl2 title-box">
+        <h1>Eye<br>Rest!</h1>
+        <div class="pt3">
+          <img src="lookaway.gif" alt="An animated gif that says to look away" class="lookaway"/>
+          <p class="attribution">Gif by <a href="https://giphy.com/feibim" target="_blank" rel="noreferrer">@feibim</a></p>
+        </div>
+      </div>
+      <div class="flex flex--column pr2 content-box">
+        <div class="mt5">
+          <p id="timer" class="right pv1">&nbsp;</p>
+          <p class="right">Every 30 minutes</p>
+          <p class="right">Take a 15 second break</p>
+          <p class="right">Look 20 meters away.</p>
+        </div>
+      </div>
+    </div>
+    <script src="timer.js"></script>
+  </body>
+</html>
